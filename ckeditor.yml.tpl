@@ -21,6 +21,8 @@ options: &options
   file_manager_image_upload_uri: "/ckeditor/create?kind=image"
   file_manager_image_uri: "/ckeditor/images"
   
+  language: 'en'
+  
 development:
   <<: *options
   

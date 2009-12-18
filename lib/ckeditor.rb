@@ -52,7 +52,7 @@ module Ckeditor
       
       ckeditor_options[:toolbar] = options[:toolbar] unless options[:toolbar].nil?
       ckeditor_options[:skin] = options[:skin] unless options[:skin].nil?
-      ckeditor_options[:language] = options[:language] unless options[:language].nil?
+      ckeditor_options[:language] = (options[:language]) ? options[:language] : Ckeditor::Config['language']
       ckeditor_options[:width] = options[:width] unless options[:width].nil?
       ckeditor_options[:height] = options[:height] unless options[:height].nil?
       
